@@ -91,6 +91,7 @@ input {
 
 @media only screen and (max-width: 673px) {
   .container {
+    width: 100vh;
     display: block;
     position: absolute;
     min-width: 250px;
@@ -102,6 +103,7 @@ input {
     display: none;
   }
   .side-section {
+    display: none;
     flex-direction: row;
     top: -2rem;
     background-color: #fff;
@@ -128,6 +130,7 @@ input {
   }
 
   .meme {
+    overflow: hidden;
     margin-bottom: 1.5rem;
     padding: 1.5rem;
   }
@@ -136,6 +139,9 @@ input {
     height: 15rem;
   }
   .btn-more {
-    top: 35rem;
+    font-size: 1rem;
+    top: 27rem;
+    position: fixed;
+    cursor: pointer;
   }
 }
