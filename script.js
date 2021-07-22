@@ -29,6 +29,7 @@ const renderMeme = function (data) {
 
 }
 
+
 const loading = function () {
     loader.style.display = 'inline-block'
     container.style.display = 'none';
@@ -69,7 +70,7 @@ const getMultipleMeme = async function (url) {
     }
 }
 
-getMultipleMeme('https://meme-api.herokuapp.com/gimme/10');
+getMultipleMeme('https://meme-api.herokuapp.com/gimme/20');
 // getMeme('https://meme-api.herokuapp.com/gimme/ProgrammerHumor');
 
 
@@ -94,23 +95,7 @@ sideSection.addEventListener('click', function (e) {
         getMultipleMeme(`https://meme-api.herokuapp.com/gimme/${text}/10`)
     }
 
-})
+});
 
-    ;
-
-window.addEventListener('scroll', () => {
-
-    // if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 1000) {
-    //     getMultipleMeme('https://meme-api.herokuapp.com/gimme/10');
-
-    // }
-
-
-
-})
-
-document.body.addEventListener('DOMContentLoaded', () => {
-    console.log(document.body.offsetHeight)
-})
 
 
