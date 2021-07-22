@@ -139,8 +139,9 @@ input {
     height: 15rem;
   }
   .btn-more {
+    /* display: none; */
     font-size: 1rem;
-    top: 27rem;
+    top: 88%;
     position: fixed;
     cursor: pointer;
   }

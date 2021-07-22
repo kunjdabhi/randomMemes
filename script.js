@@ -69,7 +69,7 @@ const getMultipleMeme = async function (url) {
     }
 }
 
-getMultipleMeme('https://meme-api.herokuapp.com/gimme/20');
+getMultipleMeme('https://meme-api.herokuapp.com/gimme/10');
 // getMeme('https://meme-api.herokuapp.com/gimme/ProgrammerHumor');
 
 
@@ -95,4 +95,22 @@ sideSection.addEventListener('click', function (e) {
     }
 
 })
+
+    ;
+
+window.addEventListener('scroll', () => {
+
+    // if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 1000) {
+    //     getMultipleMeme('https://meme-api.herokuapp.com/gimme/10');
+
+    // }
+
+
+
+})
+
+document.body.addEventListener('DOMContentLoaded', () => {
+    console.log(document.body.offsetHeight)
+})
+
 
